@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.widget.ArrayAdapter
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_main.*
-import java.io.InputStreamReader
+ import java.io.InputStreamReader
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,6 +21,10 @@ class MainActivity : AppCompatActivity() {
                     et3.text.toString(),
                     et4.text.toString()
             )
+            et1.setText("")
+            et2.setText("")
+            et3.setText("")
+            et4.setText("")
 
             var fin = openFileInput("employees.json")
             var employees : MutableList<Employee>? = null
